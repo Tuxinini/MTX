@@ -1,0 +1,157 @@
+<title>Estilos de Hover</title>
+<style>
+  :root{
+    --bg:#0b0b0d; --panel:#141417; --panel2:#1b1b1f;
+    --ink:#f5f5f7; --sub:#9a9aa2; --sub2:#6e6e76;
+    --accent:#0071e3; --accent-soft:rgba(0,113,227,.35);
+    --tile:#232327; --tile-line:rgba(255,255,255,.06);
+    --font-sans:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:light){
+    :root:not([data-theme="dark"]){
+      --bg:#f5f5f7; --panel:#ffffff; --panel2:#fbfbfc;
+      --ink:#1d1d1f; --sub:#6e6e73; --sub2:#86868b;
+      --tile:#eeeef0; --tile-line:rgba(0,0,0,.06);
+    }
+  }
+  :root[data-theme="light"]{
+    --bg:#f5f5f7; --panel:#ffffff; --panel2:#fbfbfc;
+    --ink:#1d1d1f; --sub:#6e6e73; --sub2:#86868b;
+    --tile:#eeeef0; --tile-line:rgba(0,0,0,.06);
+  }
+  *{box-sizing:border-box;}
+  body{background:var(--bg);color:var(--ink);font-family:var(--font-sans);margin:0;padding-block:28px;}
+  .wrap{max-width:900px;margin:0 auto;padding:0 20px;}
+  header{margin-bottom:34px;}
+  .kicker{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:8px;}
+  h1{font-size:26px;margin:0 0 8px;letter-spacing:-.02em;}
+  header p{color:var(--sub);font-size:14.5px;line-height:1.5;margin:0;max-width:56ch;}
+
+  .opt{margin-bottom:46px;border-top:1px solid var(--tile-line);padding-top:26px;}
+  .opt-head{display:flex;align-items:baseline;gap:10px;margin-bottom:4px;flex-wrap:wrap;}
+  .opt-letter{width:26px;height:26px;border-radius:50%;background:var(--panel2);border:1px solid var(--tile-line);display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0;}
+  .opt-title{font-size:17px;font-weight:700;letter-spacing:-.01em;}
+  .opt-desc{color:var(--sub);font-size:13px;line-height:1.5;margin:6px 0 18px;max-width:60ch;}
+
+  .row{display:flex;gap:16px;flex-wrap:wrap;}
+  .card{flex:1 1 180px;min-width:160px;max-width:230px;}
+  .card-label{font-size:12.5px;font-weight:600;margin-top:10px;color:var(--ink);}
+  .card-sub{font-size:11px;color:var(--sub2);margin-top:1px;}
+
+  .tile{border-radius:14px;background:var(--tile);border:1px solid var(--tile-line);display:flex;align-items:center;justify-content:center;font-size:30px;color:var(--sub);position:relative;overflow:hidden;}
+  .t-phone{background:linear-gradient(160deg,#2a2a30,#131316);}
+  .t-watch{background:linear-gradient(160deg,#2e241c,#141210);}
+  .t-tablet{background:linear-gradient(160deg,#1c2630,#0f1417);}
+
+  /* ---------- A: static, no layout shift ---------- */
+  .photosA{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;height:150px;}
+  .photosA .tile{transition:transform .5s cubic-bezier(.22,1,.36,1),filter .5s ease,opacity .5s ease;}
+  .photosA .extra{opacity:.35;filter:grayscale(.4) brightness(.7);transform:scale(.92);}
+  .card:hover .photosA .tile{transform:scale(1.02) translateY(-2px);}
+  .card:hover .photosA .extra{opacity:1;filter:none;transform:scale(1.02) translateY(-2px);}
+
+  /* ---------- B: slide out from behind the stack ---------- */
+  .photosB{position:relative;height:150px;}
+  .photosB .tile{position:absolute;top:0;height:100%;width:calc(50% - 4px);transition:transform .55s cubic-bezier(.19,1,.22,1),opacity .5s ease;}
+  .photosB .p1{left:0;z-index:3;}
+  .photosB .p2{left:calc(50% + 4px);z-index:2;}
+  .photosB .p3{left:calc(50% + 4px);z-index:1;opacity:0;transform:translateX(10%) scale(.94);}
+  .card:hover .photosB .p2{transform:translateX(calc(50% + 4px));}
+  .card:hover .photosB .p3{opacity:1;transform:translateX(0) scale(1);}
+
+  /* ---------- C: crossfade swap, width never changes ---------- */
+  .photosC{display:grid;grid-template-columns:1fr 1fr;gap:6px;height:150px;}
+  .photosC .stack{position:relative;}
+  .photosC .tile{position:absolute;inset:0;transition:opacity .6s ease;}
+  .photosC .tile.b{opacity:0;}
+  .card:hover .photosC .tile.a{opacity:0;}
+  .card:hover .photosC .tile.b{opacity:1;}
+
+  /* ---------- D: refined soft-expand (current mechanism, slowed further) ---------- */
+  .photosD{display:flex;gap:6px;height:150px;}
+  .photosD .tile{flex:1 1 0;min-width:0;transition:flex 1.1s cubic-bezier(.19,1,.22,1),transform 1.1s cubic-bezier(.19,1,.22,1),opacity .8s ease;}
+  .photosD .extra{flex:0 0 0%;opacity:0;transform:scale(.9);}
+  .card:hover .photosD .tile{transform:scale(1.015);}
+  .card:hover .photosD .extra{flex:1 1 0;opacity:1;transform:scale(1.015);}
+
+  footer{color:var(--sub2);font-size:12px;text-align:center;padding-top:10px;}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="kicker">Comparación de interacción</div>
+    <h1>Cuatro formas de revelar el tercer producto</h1>
+    <p>Pasa el cursor sobre cada grupo de tarjetas para probar la animación. Todas muestran el mismo objetivo — dos productos por defecto, un tercero aparece al hacer hover — pero con mecánicas de movimiento distintas.</p>
+  </header>
+
+  <section class="opt">
+    <div class="opt-head"><span class="opt-letter">A</span><span class="opt-title">Sin cambio de layout</span></div>
+    <p class="opt-desc">Las tres fotos ocupan su espacio desde el principio; la tercera está apagada y pequeña, y al pasar el cursor simplemente se ilumina y se acerca. Nada se redimensiona — es el movimiento más calmado de los cuatro.</p>
+    <div class="row">
+      <div class="card">
+        <div class="photosA">
+          <div class="tile t-phone">📱</div>
+          <div class="tile t-phone">📱</div>
+          <div class="tile t-phone extra">📱</div>
+        </div>
+        <div class="card-label">iPhone</div>
+        <div class="card-sub">Desde $6.622.792</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="opt">
+    <div class="opt-head"><span class="opt-letter">B</span><span class="opt-title">Se desliza desde atrás</span></div>
+    <p class="opt-desc">La segunda foto se corre hacia la derecha y una tercera, que estaba escondida justo detrás, sale deslizándose. Se siente como sacar una carta de una baraja — con textura, pero sin comprimir ninguna imagen.</p>
+    <div class="row">
+      <div class="card">
+        <div class="photosB">
+          <div class="tile t-watch p1">⌚</div>
+          <div class="tile t-watch p2">⌚</div>
+          <div class="tile t-watch p3">⌚</div>
+        </div>
+        <div class="card-label">Apple Watch</div>
+        <div class="card-sub">Desde $1.562.995</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="opt">
+    <div class="opt-head"><span class="opt-letter">C</span><span class="opt-title">Fundido cruzado</span></div>
+    <p class="opt-desc">No aparece una tercera imagen — en vez de eso, las dos fotos existentes se funden hacia otras dos distintas. Ves más variedad de la categoría sin que el ancho de nada cambie nunca.</p>
+    <div class="row">
+      <div class="card">
+        <div class="photosC">
+          <div class="stack">
+            <div class="tile t-tablet a">📷</div>
+            <div class="tile t-tablet b">🖥️</div>
+          </div>
+          <div class="stack">
+            <div class="tile t-tablet a">🖥️</div>
+            <div class="tile t-tablet b">📷</div>
+          </div>
+        </div>
+        <div class="card-label">iPad</div>
+        <div class="card-sub">Desde $2.628.180</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="opt">
+    <div class="opt-head"><span class="opt-letter">D</span><span class="opt-title">Expansión, muy lenta</span></div>
+    <p class="opt-desc">El mecanismo que ya tenías (las dos fotos ceden espacio y una tercera crece en medio), pero llevado a una duración mucho más larga y pausada, para ver si el problema era solo el ritmo.</p>
+    <div class="row">
+      <div class="card">
+        <div class="photosD">
+          <div class="tile t-tablet">🎧</div>
+          <div class="tile t-tablet">🎧</div>
+          <div class="tile t-tablet extra">🎧</div>
+        </div>
+        <div class="card-label">AirPods</div>
+        <div class="card-sub">Desde $114.842</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>Dime la letra que más te convence (o si prefieres que quite el "revelar tercer producto" por completo).</footer>
+</div>

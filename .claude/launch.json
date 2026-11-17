@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "logitech-preview",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8791", "--directory", "logitech-tienda-oficial-optimizado"],
+      "port": 8791
+    },
+    {
+      "name": "apple-preview",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8792", "--directory", "apple-tienda-oficial"],
+      "port": 8792
+    },
+    {
+      "name": "navidad-preview",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["navidad-tienda/dev-server.py", "8793"],
+      "port": 8793
+    }
+  ]
+}

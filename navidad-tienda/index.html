@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Medición Digital MTX: mismas etiquetas que el sitio principal -->
+<!-- Google tag (Site Kit) → GA4 G-JRF117DKP5 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GT-WPF25J22"></script>
+<script>
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["digitalmtx.com"]});
+gtag("js", new Date());
+gtag("config", "GT-WPF25J22");
+</script>
+<!-- Google Tag Manager GTM-PHQNX5F → GA4 G-21NGK753GE + píxel Meta 417068816323778 -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PHQNX5F');</script>
+<!-- Fin medición -->
+<title>Navidad en DigitalMTX.com · Guía de regalos tecnológicos</title>
+<meta name="description" content="Regalos de tecnología para Navidad, organizados por perfil: gamer, home office, creadores, audio, viajeros y usuarios de Apple. Productos originales y envíos a todo el país.">
+<link rel="canonical" href="https://digitalmtx.com/navidad-tienda/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Navidad en DigitalMTX.com · Guía de regalos tecnológicos">
+<meta property="og:description" content="Regalos de tecnología por perfil. Productos originales y envíos a nivel nacional.">
+<meta property="og:url" content="https://digitalmtx.com/navidad-tienda/">
+<meta property="og:site_name" content="Digital MTX">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<style>
+@font-face{font-family:"MTX Sans";src:url(assets/fonts/mtx-sans-400.ttf) format("truetype");font-weight:400;font-display:swap;}
+@font-face{font-family:"MTX Sans";src:url(assets/fonts/mtx-sans-700.ttf) format("truetype");font-weight:700;font-display:swap;}
+
+/* Paleta tomada de las referencias: rojo navideño, rosa y blanco cálido, con dorado de apoyo.
+   Esquinas: una sola escala suave (tarjetas 22px, bloques 32px, botones en píldora).
+   El color propio de cada guía (--c) solo aparece en su mosaico, su banner, sus tarjetas y su esfera. */
+:root{
+  --red:#d4202c; --red-d:#a8141f; --pink:#f8c7ce; --pink-l:#fde8eb; --pink-xl:#fff5f6;
+  --gold:#e0b24a; --gold-d:#b98a22;
+  --ink:#2b1215; --sub:#6e4a4f; --line:#f1d3d8; --white:#fff;
+  --r:22px; --rl:32px;
+  color-scheme:light;
+}
+*{box-sizing:border-box;}
+[hidden]{display:none!important;}
+html{scroll-behavior:smooth;}
+html,body{margin:0;padding:0;}
+body{background:var(--pink-l);color:var(--ink);font-family:"MTX Sans",-apple-system,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.45;}
+a{color:inherit;text-decoration:none;}
+button,input{font-family:inherit;}
+button{cursor:pointer;}
+img{max-width:100%;display:block;}
+.ph{font-size:20px;line-height:1;}
+:focus-visible{outline:2px solid var(--ink);outline-offset:2px;}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px));}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--red-d);}
+.page{position:relative;}
+
+/* Marco lateral rojo con puntos, como en la referencia navideña */
+.edge{display:none;position:fixed;top:0;bottom:0;width:56px;z-index:1;background-color:var(--red);background-image:radial-gradient(rgba(255,255,255,.5) 2px,transparent 2.6px);background-size:22px 22px;}
+.edge.l{left:0;box-shadow:inset -4px 0 0 var(--gold);}
+.edge.r{right:0;box-shadow:inset 4px 0 0 var(--gold);}
+@media (min-width:1024px){
+  .edge{display:block;}
+  .page{margin:0 56px;}
+}
+
+/* ===== Header (mismo esquema del sitio principal) ===== */
+.top{background:var(--red-d);color:#fff;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;min-height:32px;display:flex;align-items:center;justify-content:center;gap:8px;padding:6px 16px;text-align:center;}
+.site-head{background:#fff;}
+.row1{display:flex;align-items:center;gap:28px;padding-top:14px;padding-bottom:10px;}
+.logo img{width:140px;height:38px;object-fit:contain;}
+.search{flex:1;max-width:560px;margin:0 auto;display:flex;background:var(--pink-l);border-radius:999px;padding:4px;}
+.search input{flex:1;min-width:0;height:38px;border:0;background:none;padding:0 16px;font-size:14px;color:var(--ink);}
+.search input::placeholder{color:var(--sub);}
+.search button{height:38px;padding:0 20px;border:0;background:var(--red);color:#fff;font-weight:700;font-size:13px;letter-spacing:.04em;border-radius:999px;}
+.search button:hover{background:var(--red-d);}
+.acc{display:flex;gap:8px;}
+.acc a{display:flex;align-items:center;gap:8px;background:var(--pink-l);border-radius:999px;padding:9px 16px;font-size:13px;font-weight:700;}
+.acc a:hover{background:var(--pink);}
+.menu{display:flex;gap:26px;align-items:center;padding-bottom:12px;overflow-x:auto;scrollbar-width:none;}
+.menu::-webkit-scrollbar{display:none;}
+.menu a{font-size:14px;font-weight:700;white-space:nowrap;padding:4px 0;}
+.menu a:hover{color:var(--red);}
+.menu a.here{color:#fff;background:var(--red);padding:7px 16px;border-radius:999px;}
+.menu a.here:hover{background:var(--red-d);color:#fff;}
+
+/* ===== Hero: forma roja grande y paquetes sobre platos ===== */
+.hero{position:relative;background:var(--pink);overflow:hidden;}
+.hero::before{content:"";position:absolute;left:-16%;top:-34%;width:82%;height:178%;background:var(--red);border-radius:50%;}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);gap:24px;align-items:center;padding-top:88px;padding-bottom:56px;}
+.hero h1{font-size:clamp(34px,4.4vw,56px);line-height:1.04;letter-spacing:-.025em;margin:0 0 16px;color:#fff;max-width:13ch;}
+.hero h1 em{font-style:normal;color:var(--gold);}
+.hero p{font-size:18px;color:#ffe3e6;margin:0 0 26px;max-width:40ch;}
+.btn-pill{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--red-d);font-weight:700;font-size:15px;padding:14px 26px;border-radius:999px;white-space:nowrap;transition:transform .15s,background .15s;}
+.btn-pill:hover{background:var(--pink-xl);transform:translateY(-2px);}
+.btn-pill:active{transform:translateY(1px);}
+.btn-red{background:var(--red);color:#fff;}
+.btn-red:hover{background:var(--red-d);}
+.plates{position:relative;height:400px;--k:1;}
+.plate{position:absolute;display:grid;place-items:center;width:calc(var(--s)*var(--k));height:calc(var(--s)*var(--k));border-radius:50%;background:#fff;box-shadow:0 0 0 5px var(--c),0 20px 30px -12px rgba(120,10,25,.5);overflow:hidden;transition:transform .25s;}
+.plate img{width:78%;height:78%;object-fit:contain;}
+.plate:hover{transform:scale(1.05) rotate(-3deg);}
+.plate:nth-child(1){--s:280px;right:4%;top:20px;}
+.plate:nth-child(2){--s:170px;left:0;top:0;}
+.plate:nth-child(3){--s:190px;left:8%;bottom:0;}
+.plate:nth-child(4){--s:150px;right:0;bottom:6px;}
+.plate.sk{background:rgba(255,255,255,.5);box-shadow:none;}
+.hero-r{display:flex;flex-direction:column;align-items:flex-end;gap:20px;min-width:0;}
+.hero-r .plates{width:100%;height:370px;}
+.btn-gold{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--ink);border:0;font-weight:700;font-size:15px;padding:14px 26px;border-radius:999px;white-space:nowrap;box-shadow:0 12px 20px -12px rgba(120,10,25,.7);transition:transform .15s,background .15s;}
+.btn-gold:hover{background:#ecc468;transform:translateY(-2px);}
+.btn-gold:active{transform:translateY(1px);}
+.btn-gold .ph{font-size:22px;}
+.btn-soft{background:var(--pink-l);color:var(--ink);border:0;}
+.btn-soft:hover{background:var(--pink);}
+
+/* Recomendación aleatoria */
+.modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:20px;background:rgba(43,18,21,.6);}
+.mcard{position:relative;background:#fff;border-radius:var(--rl);width:100%;max-width:420px;padding:30px 28px 26px;text-align:center;box-shadow:0 30px 50px -20px rgba(0,0,0,.6);animation:pop-in .4s cubic-bezier(.34,1.45,.64,1);}
+@keyframes pop-in{from{opacity:0;scale:.9;translate:0 20px;}to{opacity:1;scale:1;translate:0 0;}}
+.mcard h2{margin:0 0 18px;font-size:22px;letter-spacing:-.01em;}
+.mx{position:absolute;right:14px;top:14px;width:38px;height:38px;border-radius:50%;border:0;background:var(--pink-l);display:grid;place-items:center;color:var(--ink);}
+.mx:hover{background:var(--pink);}
+.mcard{max-width:760px;overflow:hidden;}
+.reel{position:relative;overflow:hidden;height:220px;margin:0 -28px 12px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 16%,#000 84%,transparent);mask-image:linear-gradient(90deg,transparent,#000 16%,#000 84%,transparent);}
+.track{display:flex;align-items:center;gap:18px;height:100%;width:max-content;will-change:transform;}
+.ri{flex:0 0 150px;height:150px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px var(--pink),0 12px 18px -12px rgba(0,0,0,.4);display:grid;place-items:center;overflow:hidden;transition:transform .45s cubic-bezier(.34,1.56,.64,1);pointer-events:none;}
+.ri img{width:78%;height:78%;object-fit:contain;}
+.ri.win{transform:scale(1.18);pointer-events:auto;}
+.mark{position:absolute;left:50%;top:50%;width:184px;height:184px;margin:-92px 0 0 -92px;border-radius:50%;box-shadow:0 0 0 5px var(--gold);pointer-events:none;}
+.res{transition:opacity .45s ease,translate .45s ease;}
+.res.hide{opacity:0;visibility:hidden;translate:0 10px;}
+.mcard h3{margin:0 0 6px;font-size:18px;line-height:1.25;}
+.mp{font-size:26px;font-weight:700;color:var(--red);margin-bottom:18px;}
+.mp small{font-size:12px;font-weight:400;color:var(--sub);margin-left:4px;}
+.mbtn{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
+.mbtn .btn-pill{font-size:14px;padding:12px 20px;}
+.js .plate{animation:drop .9s cubic-bezier(.34,1.56,.64,1) both;animation-delay:calc(var(--i)*140ms + 200ms);}
+@keyframes drop{from{opacity:0;translate:0 -46px;rotate:-4deg;}to{opacity:1;translate:0 0;rotate:0deg;}}
+
+.garland{position:absolute;left:0;right:0;top:0;height:70px;z-index:1;pointer-events:none;}
+.garland svg{display:block;}
+.garland .wire{fill:none;stroke:rgba(0,0,0,.5);stroke-width:2;}
+.garland .cap{fill:#1c1c1c;}
+.garland .bulb{animation:twinkle 2.6s ease-in-out infinite;animation-delay:var(--d);filter:drop-shadow(0 0 4px var(--b));}
+@keyframes twinkle{0%,100%{opacity:1}50%{opacity:.45}}
+#snow{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:20;}
+
+/* ===== Hoja blanca con esquinas grandes ===== */
+.sheet{background:#fff;border-radius:var(--rl) var(--rl) 0 0;margin-top:-28px;position:relative;z-index:3;padding-top:48px;padding-bottom:8px;}
+.sec{padding-top:8px;padding-bottom:40px;}
+.sec-t{text-align:center;font-size:clamp(22px,3vw,32px);letter-spacing:-.02em;margin:0 0 24px;line-height:1.1;}
+.sec-h{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 22px;}
+.sec-h h2{margin:0;font-size:clamp(22px,2.8vw,30px);letter-spacing:-.02em;}
+
+/* Categorías por perfil */
+.cats{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px;padding:4px 0 8px;}
+.cat{position:relative;grid-column:span var(--sp,3);min-height:230px;border-radius:28px;background:var(--c);color:#fff;overflow:hidden;padding:22px 22px 20px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .25s,box-shadow .25s;}
+.cat::before{content:"";position:absolute;width:210px;height:210px;border-radius:50%;background:rgba(255,255,255,.13);left:-70px;top:-80px;transition:transform .5s;}
+.cat::after{content:"";position:absolute;width:190px;height:190px;border-radius:50%;background:rgba(0,0,0,.1);right:-60px;bottom:-70px;}
+.cat>*{position:relative;z-index:1;}
+.cat h3{margin:0;font-size:21px;line-height:1.1;letter-spacing:-.01em;max-width:13ch;}
+.cat .meta{display:flex;flex-direction:column;gap:10px;align-items:flex-start;}
+.cat .n{font-size:13px;font-weight:700;color:rgba(255,255,255,.92);max-width:15ch;line-height:1.3;}
+.cat .go{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--c);font-weight:700;font-size:13px;padding:8px 14px;border-radius:999px;transition:gap .2s;}
+.cat .pl{position:absolute;z-index:2;right:-18px;bottom:-22px;width:min(160px,52%);aspect-ratio:1/1;border-radius:50%;background:#fff;display:grid;place-items:center;overflow:hidden;box-shadow:0 14px 22px -10px rgba(0,0,0,.5);}
+.cat .pl img{width:78%;height:78%;object-fit:contain;transition:transform .35s cubic-bezier(.34,1.56,.64,1);}
+.cat:hover{transform:translateY(-6px);box-shadow:0 22px 30px -18px var(--c);}
+.cat:hover::before{transform:scale(1.25);}
+.cat:hover .pl img{transform:scale(1.12) rotate(-6deg);}
+.cat:hover .go{gap:12px;}
+
+/* Tarjetas de producto: base rosa y botón de carrito en la esquina */
+.items{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px;}
+.items.row{grid-template-columns:repeat(auto-fit,minmax(170px,1fr));}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;min-width:0;box-shadow:0 6px 16px -12px rgba(168,20,31,.5);transition:transform .25s,box-shadow .25s,border-color .25s;}
+.card:hover{transform:translateY(-6px);box-shadow:0 20px 30px -16px rgba(168,20,31,.55);border-color:var(--c);}
+.card .im{aspect-ratio:1/1;padding:14px;display:flex;align-items:center;justify-content:center;background:#fff;}
+.card .im img{max-height:100%;object-fit:contain;transition:transform .3s cubic-bezier(.16,1,.3,1);}
+.card:hover .im img{transform:scale(1.07) rotate(-1.5deg);}
+.card h3{margin:0 14px 10px;padding:0;font-size:14px;font-weight:700;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.9em;}
+.card h3 a:hover{color:var(--c);}
+.card .foot{margin-top:auto;display:flex;align-items:stretch;justify-content:space-between;background:color-mix(in srgb,var(--c) 11%,#fff);}
+.card .price{align-self:center;padding:12px 0 12px 14px;font-size:17px;font-weight:700;letter-spacing:-.01em;}
+.card .price small{display:block;font-size:10px;font-weight:400;color:var(--sub);letter-spacing:0;}
+.card .buy{width:58px;display:grid;place-items:center;background:var(--c);color:#fff;border-radius:26px 0 0 0;font-size:22px;transition:filter .15s,width .2s;}
+.card .buy .ph{font-size:22px;}
+.card:hover .buy{width:66px;}
+.card .buy:hover{filter:brightness(1.12);}
+
+/* Imágenes de relleno hasta tener los productos */
+.phimg{width:100%;aspect-ratio:1/1;border-radius:16px;display:grid;place-items:center;color:var(--c);background:repeating-linear-gradient(135deg,color-mix(in srgb,var(--c) 8%,#fff) 0 12px,color-mix(in srgb,var(--c) 15%,#fff) 12px 24px);}
+.phimg .ph{font-size:46px;opacity:.65;}
+.card .price.tbd{font-size:13px;color:var(--sub);}
+.cat .pl .ph{font-size:48px;color:var(--c);opacity:.6;}
+.sk-b{background:linear-gradient(90deg,#f3dfe2 25%,#fbeff1 50%,#f3dfe2 75%);background-size:200% 100%;animation:sh 1.3s infinite;border-radius:14px;}
+@keyframes sh{to{background-position:-200% 0;}}
+.card.sk{min-height:300px;border-color:transparent;}
+
+/* Nuestra promesa */
+.promise{background:var(--pink);border-radius:999px;padding:24px 44px 26px;text-align:center;}
+.promise h2{margin:0 0 16px;font-size:24px;letter-spacing:-.01em;}
+.pr-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.pr{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:14px;font-weight:700;}
+.pr .ph{font-size:30px;color:var(--red-d);}
+
+/* Ticket con cuenta regresiva */
+.tk-wrap{background:var(--pink-l);border-radius:var(--rl);padding:30px 36px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:32px;align-items:center;}
+.ticket{position:relative;background:var(--red);color:#fff;text-align:center;padding:26px 40px;min-width:250px;-webkit-mask:radial-gradient(circle 11px at 0 50%,transparent 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 11px at 100% 50%,transparent 98%,#000) right/51% 100% no-repeat;mask:radial-gradient(circle 11px at 0 50%,transparent 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 11px at 100% 50%,transparent 98%,#000) right/51% 100% no-repeat;}
+.ticket::after{content:"";position:absolute;inset:9px;border:1.5px dashed rgba(255,255,255,.65);border-radius:10px;pointer-events:none;}
+.ticket b{display:block;font-size:54px;line-height:1;letter-spacing:-.03em;}
+.ticket span{display:block;margin-top:6px;font-size:14px;font-weight:700;}
+.tk-wrap h2{margin:0 0 6px;font-size:clamp(24px,3vw,32px);letter-spacing:-.02em;line-height:1.1;}
+.tk-wrap p{margin:0 0 16px;color:var(--sub);max-width:46ch;}
+
+/* Barra de presupuesto (fija) */
+.bar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 10px);z-index:40;margin:0 0 12px;}
+.bar-in{background:#fff;border:1px solid var(--line);border-radius:28px;box-shadow:0 14px 24px -16px rgba(168,20,31,.55);padding:8px 10px 8px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.bar-label{font-size:13px;font-weight:700;color:var(--sub);}
+.seg{display:flex;gap:6px;flex-wrap:wrap;}
+.seg button{border:0;background:var(--pink-l);color:var(--ink);border-radius:999px;padding:9px 16px;font-size:13px;font-weight:700;transition:background .15s,color .15s;}
+.seg button:hover{background:var(--pink);}
+.seg button[aria-pressed="true"]{background:var(--red);color:#fff;}
+.pills{display:none;gap:6px;overflow-x:auto;scrollbar-width:none;width:100%;padding:2px 0 4px;}
+.pills::-webkit-scrollbar{display:none;}
+.pills a{white-space:nowrap;font-size:13px;font-weight:700;padding:7px 14px;border-radius:999px;background:color-mix(in srgb,var(--c) 14%,#fff);}
+.pills a.on{background:var(--c);color:#fff;}
+
+/* Guías */
+.guide{scroll-margin-top:96px;padding-top:32px;}
+.gb{position:relative;overflow:hidden;background:var(--c);color:#fff;border-radius:var(--rl);padding:34px 38px;display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,340px);gap:20px 36px;align-items:center;margin-bottom:22px;}
+.gb::before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,.12);right:-90px;top:-130px;}
+.gb::after{content:"";position:absolute;width:170px;height:170px;border-radius:50%;background:rgba(255,255,255,.1);left:38%;bottom:-100px;}
+.gb>*{position:relative;z-index:1;}
+.gb h2{margin:0 0 8px;font-size:clamp(26px,3.4vw,38px);letter-spacing:-.025em;line-height:1.05;}
+.gb p{margin:0;font-size:16px;color:rgba(255,255,255,.94);max-width:46ch;}
+.gb .count{margin-top:14px;font-size:13px;font-weight:700;color:rgba(255,255,255,.9);}
+.tip{background:#fff;color:var(--ink);border-radius:24px;padding:18px 20px;font-size:14px;}
+.tip b{display:flex;align-items:center;gap:6px;color:var(--c);font-size:13px;margin-bottom:4px;}
+.tip a{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-weight:700;font-size:13px;color:var(--c);}
+.tip a:hover{text-decoration:underline;text-underline-offset:3px;}
+
+.nodata{display:none;text-align:center;padding:48px 24px;color:var(--sub);}
+.nodata.show{display:block;}
+.nodata a{color:var(--red);text-decoration:underline;}
+.err{background:#fff3cd;color:#664d03;padding:10px 20px;text-align:center;font-size:13px;display:none;}
+
+/* Selector lateral: esferas colgadas sobre el marco rojo */
+.rail{position:fixed;left:max(16px,calc(env(safe-area-inset-left,0px) + 4px));top:50%;transform:translateY(-50%);z-index:30;display:flex;flex-direction:column;gap:6px;opacity:0;pointer-events:none;transition:opacity .25s;}
+.rail.show{opacity:1;pointer-events:auto;}
+.rail::before{content:"";position:absolute;left:11px;top:14px;bottom:14px;width:2px;background:rgba(255,255,255,.7);}
+.rail a{position:relative;display:flex;align-items:center;justify-content:center;width:24px;height:30px;transform-origin:50% 0;}
+.rail .dot{position:relative;width:14px;height:14px;border-radius:50%;box-shadow:0 0 0 1.5px #fff;background:radial-gradient(circle at 34% 28%,rgba(255,255,255,.95) 0 9%,transparent 10%),radial-gradient(circle at 50% 42%,var(--c),color-mix(in srgb,var(--c) 62%,#000));transition:transform .2s;}
+.rail .dot::before{content:"";position:absolute;left:50%;top:-5px;width:6px;height:5px;margin-left:-3px;background:var(--gold);border-radius:1px;}
+.rail a:hover .dot,.rail a.on .dot{transform:scale(1.5);}
+.rail a.on{animation:swing 2.2s ease-in-out 2;}
+@keyframes swing{0%,100%{rotate:0deg}25%{rotate:16deg}75%{rotate:-16deg}}
+.rail .lbl{position:absolute;left:34px;top:50%;transform:translate(-6px,-50%);white-space:nowrap;background:var(--ink);color:#fff;font-size:12px;font-weight:700;padding:5px 12px;border-radius:999px;opacity:0;pointer-events:none;transition:opacity .15s,transform .15s;}
+.rail a:hover .lbl,.rail a:focus-visible .lbl{opacity:1;transform:translate(0,-50%);}
+.rail a:focus-visible{outline-color:#fff;}
+
+/* Entrada al hacer scroll: los productos llegan como paquetes */
+.js .guide.in .card{animation:pop .75s cubic-bezier(.34,1.45,.64,1) both;animation-delay:calc(var(--i)*70ms);}
+@keyframes pop{from{opacity:0;translate:0 28px;rotate:-2.5deg;scale:.92;}to{opacity:1;translate:0 0;rotate:0deg;scale:1;}}
+
+footer{background:var(--red);color:#fff;border-radius:var(--rl) var(--rl) 0 0;margin-top:32px;}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px;padding-top:44px;padding-bottom:28px;}
+footer h3{margin:0 0 12px;font-size:15px;}
+footer p{margin:0;font-size:14px;color:#ffe3e6;max-width:30ch;}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:14px;color:#ffe3e6;}
+footer a:hover{color:#fff;text-decoration:underline;text-underline-offset:3px;}
+.brand{font-size:26px;font-weight:700;letter-spacing:-.02em;margin-bottom:8px;}
+.copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.3);padding-top:18px;font-size:12px;color:#ffd0d5;}
+
+@media (max-width:1023px){
+  .rail{display:none;}
+  .pills{display:flex;}
+  .hero::before{left:-30%;top:-30%;width:160%;height:100%;}
+  .hero .wrap{grid-template-columns:1fr;padding-top:84px;padding-bottom:36px;}
+  .plates{--k:.78;height:340px;}
+  .hero-r{align-items:center;}
+  .hero-r .plates{height:340px;}
+  .gb{grid-template-columns:1fr;}
+  .tk-wrap{grid-template-columns:1fr;justify-items:center;text-align:center;}
+  .tk-wrap p{margin-left:auto;margin-right:auto;}
+  footer .wrap{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:1023px){
+  .cat{grid-column:span var(--sp2,6);min-height:210px;}
+}
+@media (max-width:860px){
+  .row1{flex-wrap:wrap;gap:12px;}
+  .logo{order:1}.acc{order:2;margin-left:auto}.search{order:3;flex-basis:100%;max-width:none}
+  .acc a span{display:none}
+  .acc a{padding:10px 12px;}
+  .promise{border-radius:var(--rl);padding:24px;}
+  .pr-row{grid-template-columns:repeat(2,1fr);}
+  .bar-label{display:none;}
+}
+@media (max-width:560px){
+  .cats{gap:12px;}
+  .cat{min-height:190px;padding:18px 16px 16px;}
+  .cat h3{font-size:18px;}
+  .cat .pl{width:min(120px,50%);}
+  .items{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+  .items.row{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .card h3{font-size:13px;}
+  .gb{padding:26px 22px;}
+  .plates{--k:.6;height:280px;}
+  .hero-r .plates{height:280px;}
+  .mimg{width:180px;height:180px;}
+  .tk-wrap{padding:24px 18px;}
+  .ticket{min-width:0;width:100%;}
+  footer .wrap{grid-template-columns:1fr;}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{transition:none!important;animation:none!important;}
+}
+</style>
+<div class="modal" id="idea" role="dialog" aria-modal="true" aria-labelledby="idea-t" hidden>
+  <div class="mcard">
+    <button class="mx" id="idea-x" type="button" aria-label="Cerrar"><i class="ph ph-x"></i></button>
+    <h2 id="idea-t">Tu idea de regalo</h2>
+    <div class="reel" id="reel" aria-hidden="true"><div class="track" id="track"></div><span class="mark"></span></div>
+    <div class="res hide" id="idea-res" aria-live="polite">
+      <h3 id="idea-n"></h3>
+      <div class="mp" id="idea-p"></div>
+      <div class="mbtn">
+        <a class="btn-pill btn-red" id="idea-buy" href="#" data-cart="">Comprar <i class="ph ph-shopping-cart-simple"></i></a>
+        <button class="btn-pill btn-soft" id="idea-again" type="button"><i class="ph ph-shuffle"></i> Otra idea</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="edge l" aria-hidden="true"></div><div class="edge r" aria-hidden="true"></div>
+<canvas id="snow" aria-hidden="true"></canvas>
+<nav class="rail" id="rail" aria-label="Ir a una guía"></nav>
+
+<div class="page">
+<div class="top"><i class="ph ph-envelope-simple"></i>Regístrate para conocer los nuevos productos</div>
+<header class="site-head">
+  <div class="wrap">
+    <div class="row1">
+      <a class="logo" href="https://digitalmtx.com/"><img src="https://digitalmtx.com/wp-content/uploads/logo.webp" alt="Digital MTX" width="140" height="38"></a>
+      <form class="search" role="search" action="https://digitalmtx.com/" method="get">
+        <input type="search" name="s" placeholder="Buscar productos ..." aria-label="Buscar productos">
+        <input type="hidden" name="post_type" value="product">
+        <button type="submit">BUSCAR</button>
+      </form>
+      <div class="acc">
+        <a href="https://digitalmtx.com/tienda/"><i class="ph ph-storefront"></i><span>Tienda</span></a>
+        <a href="https://digitalmtx.com/mi-cuenta/"><i class="ph ph-user"></i><span>Login</span></a>
+        <a href="https://digitalmtx.com/carrito/" aria-label="Carrito"><i class="ph ph-shopping-cart"></i><span>Carrito</span></a>
+      </div>
+    </div>
+    <nav class="menu" aria-label="Menú principal">
+      <a href="https://digitalmtx.com/tienda/">Tecnología</a>
+      <a href="https://digitalmtx.com/categoria/discos-memorias/">Discos y Memorias</a>
+      <a href="https://digitalmtx.com/categoria/repuestos-de-computo/">Repuestos de Cómputo</a>
+      <a href="https://digitalmtx.com/categoria/impresion-y-pos/">Impresión y POS</a>
+      <a href="https://digitalmtx.com/logitech-tienda-oficial/">Logitech</a>
+      <a class="here" href="https://digitalmtx.com/navidad-tienda/" aria-current="page">Navidad</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="garland" id="garland" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <h1>Tecnología para regalar esta <em>Navidad</em></h1>
+      <p>Elige para quién es el regalo y te mostramos productos originales con envío a todo el país.</p>
+      <a class="btn-pill" href="#para-quien" id="start">Ver los regalos <i class="ph ph-arrow-down"></i></a>
+    </div>
+    <div class="hero-r">
+      <div class="plates" id="plates" aria-label="Guías por perfil"></div>
+      <button class="btn-gold" id="surprise" type="button" hidden><i class="ph ph-gift"></i> Recomiéndame un regalo</button>
+    </div>
+  </div>
+</section>
+
+<div class="sheet">
+  <section class="sec wrap" id="para-quien">
+    <h2 class="sec-t">¿Para quién es el regalo?</h2>
+    <div class="cats" id="cats"></div>
+  </section>
+
+  <section class="sec wrap" id="accesibles" hidden>
+    <div class="sec-h"><h2>Regalos hasta $100.000</h2><a class="btn-pill btn-red" href="#presupuesto" id="cheap-all">Ver todos</a></div>
+    <div class="items row" id="cheap"></div>
+  </section>
+
+  <section class="sec wrap">
+    <div class="promise">
+      <h2>Nuestra promesa</h2>
+      <div class="pr-row">
+        <div class="pr"><i class="ph ph-truck"></i>Envíos a todo el país</div>
+        <div class="pr"><i class="ph ph-seal-check"></i>Productos originales</div>
+        <div class="pr"><i class="ph ph-shield-check"></i>Pago seguro</div>
+        <div class="pr"><i class="ph ph-chat-circle-dots"></i>Asesoría por WhatsApp</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap">
+    <div class="tk-wrap">
+      <div class="ticket"><b id="tk-n">Navidad</b><span id="tk-l">2026</span></div>
+      <div>
+        <h2>¿Todavía no sabes qué regalar?</h2>
+        <p>Cuéntanos para quién es y cuánto quieres gastar, y te recomendamos una opción. Pide a tiempo para que llegue antes del 24 de diciembre.</p>
+        <a class="btn-pill btn-red" href="https://digitalmtx.com/contacto/">Hablar con un asesor <i class="ph ph-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="bar" id="presupuesto">
+    <div class="wrap">
+      <div class="bar-in">
+        <span class="bar-label">Presupuesto</span>
+        <div class="seg" id="seg" role="group" aria-label="Presupuesto"></div>
+        <nav class="pills" id="pills" aria-label="Guías de regalo"></nav>
+      </div>
+    </div>
+  </div>
+
+  <main id="guides"></main>
+  <div class="nodata" id="nodata"><b>No hay productos para este presupuesto.</b><br>Prueba otro rango o <a href="https://digitalmtx.com/tienda/">visita la tienda completa</a>.</div>
+  <div class="err" id="err">No pudimos cargar algunos productos. <a href="https://digitalmtx.com/tienda/" style="text-decoration:underline">Ver la tienda completa</a>.</div>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <div class="brand">Digital MTX</div>
+        <p>Tecnología original para regalar, con envíos a todo el país.</p>
+      </div>
+      <div>
+        <h3>Tienda</h3>
+        <ul>
+          <li><a href="https://digitalmtx.com/tienda/">Tienda completa</a></li>
+          <li><a href="https://digitalmtx.com/categoria/repuestos-de-computo/">Repuestos de cómputo</a></li>
+          <li><a href="https://digitalmtx.com/categoria/impresion-y-pos/">Impresión y POS</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Marcas</h3>
+        <ul>
+          <li><a href="https://digitalmtx.com/logitech-tienda-oficial/">Logitech</a></li>
+          <li><a href="https://digitalmtx.com/apple-tienda-oficial/">Apple</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Ayuda</h3>
+        <ul>
+          <li><a href="https://digitalmtx.com/contacto/">Contacto</a></li>
+          <li><a href="https://digitalmtx.com/mi-cuenta/">Mi cuenta</a></li>
+        </ul>
+      </div>
+      <div class="copy">© 2026 Digital MTX. Precios en COP, sujetos a disponibilidad.</div>
+    </div>
+  </footer>
+</div>
+</div>
+
+<script>
+(function(){
+  var SITE = 'https://digitalmtx.com';
+  var PER_GUIDE = 8;
+
+  // Un color por guía (todos con contraste AA contra texto blanco).
+  var GUIDES = [
+    {id:'gamer', c:'#6d28d9', tag:'Para el gamer',
+     text:'Mouse inalámbricos y periféricos de precisión para quien juega en serio.',
+     tip:'Un mouse inalámbrico liviano es el regalo gamer que más se usa y casi nunca se repite.',
+     cats:[268,253], exclude:/essential|professional|m196|mobi|shifter|g560|k400|trackpad|magic|m\d{3}\b/i, more:'/categoria-producto/gaming/'},
+    {id:'home-office', c:'#1d5fd1', tag:'Para quien trabaja en casa',
+     text:'Mouse, teclados y soportes para jornadas largas frente al computador.',
+     tip:'Un combo de teclado y mouse inalámbrico es un acierto seguro para cualquier presupuesto.',
+     cats:[197,127,121], more:'/categoria-producto/accesorios-y-perifericos/'},
+    {id:'creador', c:'#c4156a', tag:'Para creadores y streamers',
+     text:'Cámaras web y micrófonos para videollamadas, clases y contenido.',
+     tip:'Si ya tiene cámara, regala un micrófono: el audio es lo que más mejora el resultado.',
+     cats:[123,266], exclude:/rally|group|meetup|brio 4k pro|conferenc|poly|jabra|business/i, more:'/categoria-producto/accesorios-y-perifericos/camaras-web/'},
+    {id:'audio', c:'#c2570c', tag:'Para quien vive con música',
+     text:'Audífonos y parlantes para escuchar mejor en casa, en la calle o en la oficina.',
+     tip:'Un parlante Bluetooth portátil le sirve a casi todos. Pregunta si lo usaría más en casa o de viaje.',
+     cats:[263,128], exclude:/rally|evolve|group|poly|conferencia|videoconferencia|mic pod/i, more:'/categoria-producto/audio-y-video/'},
+    {id:'viajero', c:'#0b7a43', tag:'Para viajeros y estudiantes',
+     text:'Mochilas, cargadores y baterías portátiles para el día a día.',
+     tip:'Un power bank o un cargador rápido es el regalo útil que todos terminan usando a diario.',
+     cats:[196,124], exclude:/cable de seguridad|defcon/i, more:'/categoria-producto/accesorios-y-perifericos/'},
+    {id:'apple', c:'#4b5563', tag:'Para quien usa Apple',
+     text:'Accesorios, AirPods, iPad y iPhone de la tienda oficial.',
+     tip:'Si no conoces su modelo, los accesorios y los AirPods funcionan con casi todo el ecosistema.',
+     cats:[255], allow:/adaptador usb-c 35w|magsafe|airtag/i, more:'/apple-tienda-oficial/'},
+    {id:'detalle', c:'#946c00', tag:'Detalles y amigo secreto',
+     text:'Opciones de hasta $60.000 para intercambios y regalos de última hora.',
+     tip:'Para un amigo secreto, un accesorio útil por menos de $60.000 siempre supera a un regalo genérico.',
+     cats:[126,124,197,196], maxPrice:60000, more:'/categoria-producto/accesorios-y-perifericos/'},
+    // Guías sin presupuesto: por ahora muestran imágenes de relleno hasta definir los productos
+    {id:'increible', c:'#0e7490', placeholder:true, tag:'Un regalo increíble',
+     text:'Para quien se lo merece todo: equipos de primera, de esos regalos que se recuerdan por años.',
+     tip:'Si quieres dejar huella, elige el equipo que la persona usa a diario y llévalo al siguiente nivel.',
+     cats:[], more:'/tienda/'},
+    {id:'ultimo', c:'#4d7c0f', placeholder:true, tag:'Para sorprender con lo último',
+     text:'Tecnología nueva, práctica y fácil de usar para quien disfruta estrenar.',
+     tip:'Un gadget que no sabía que necesitaba suele ser el regalo que más se recuerda.',
+     cats:[], more:'/tienda/'},
+    {id:'familia', c:'#1e3a8a', placeholder:true, tag:'Para toda la familia',
+     text:'El regalo grande de la casa: algo que todos van a disfrutar juntos.',
+     tip:'Si el regalo es para el hogar, piensa en lo que se comparte: sala, cine y juegos en familia.',
+     cats:[], more:'/tienda/'}
+  ];
+  // Productos que no funcionan como regalo (repuestos, cableado, uso vehicular o empresarial)
+  var NOT_GIFT = /conector|rj45|hdmi|vga|displayport|\bcable\b|adaptador|carro|road cam|infantil|bluethooth|repuesto|bater[ií]a|cinta|pila|soporte para pared|rally|videoconferencia|\btap\b|swytch|mount|riser|scheduler|for business|funda|maxcases|zone wired|sync |roommate|scribe/i;
+  var BUDGETS = [
+    {label:'Todos', min:0, max:Infinity},
+    {label:'Hasta $100.000', min:0, max:100000},
+    {label:'$100.000 a $300.000', min:100000, max:300000},
+    {label:'Más de $300.000', min:300000, max:Infinity}
+  ];
+  var bi = 0;        // presupuesto activo
+  var STORE = {};    // guide.id -> [lista por presupuesto, de menor a mayor precio]
+
+  var $ = function(s){return document.querySelector(s);};
+  var fmt = new Intl.NumberFormat('es-CO');
+  function clean(html){var t=document.createElement('textarea');t.innerHTML=html;return t.value;}
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function title(name){
+    var n = clean(name);
+    var cut = n.split(/\s[–—-]\s/)[0];
+    return (cut.length > 12 ? cut : n).trim();
+  }
+  function card(p,i,c){
+    return '<article class="card" style="--i:'+i+(c?';--c:'+c:'')+'"><a class="im" href="'+p.link+'" tabindex="-1" aria-hidden="true"><img loading="lazy" src="'+p.img+'" alt=""></a>'+
+      '<h3><a href="'+p.link+'">'+esc(p.name)+'</a></h3>'+
+      '<div class="foot"><div class="price">$'+fmt.format(p.price)+'<small>COP</small></div>'+
+      '<a class="buy" href="'+SITE+'/?add-to-cart='+p.id+'" data-cart="'+p.id+'" aria-label="Comprar '+esc(p.name)+'"><i class="ph ph-shopping-cart-simple"></i></a></div></article>';
+  }
+  function phCard(p,i){
+    return '<article class="card" style="--i:'+i+'"><a class="im" href="'+p.link+'" tabindex="-1" aria-hidden="true"><div class="phimg"><i class="ph ph-image"></i></div></a>'+
+      '<h3><a href="'+p.link+'">'+p.name+'</a></h3>'+
+      '<div class="foot"><div class="price tbd">Precio por definir</div>'+
+      '<a class="buy" href="'+p.link+'" aria-label="Ver la tienda"><i class="ph ph-arrow-right"></i></a></div></article>';
+  }
+  function skeleton(){
+    var s=''; for(var i=0;i<4;i++) s+='<div class="card sk"><div class="sk-b" style="margin:14px;aspect-ratio:1/1"></div><div class="sk-b" style="margin:0 14px 10px;height:36px"></div></div>'; return s;
+  }
+
+  // Estructura estática. Esferas, pestañas, mosaicos y secciones aparecen solo si la guía tiene productos.
+  var rail=$('#rail'), pills=$('#pills'), seg=$('#seg'), main=$('#guides'), cats=$('#cats');
+  rail.innerHTML='<a href="#inicio" data-g="inicio" style="--c:#b98a22" aria-label="Inicio"><span class="dot"></span><span class="lbl">Inicio</span></a>';
+  GUIDES.forEach(function(g){
+    var st='--c:'+g.c;
+    rail.insertAdjacentHTML('beforeend','<a href="#'+g.id+'" data-g="'+g.id+'" style="'+st+'" aria-label="'+g.tag+'" hidden><span class="dot"></span><span class="lbl">'+g.tag+'</span></a>');
+    pills.insertAdjacentHTML('beforeend','<a href="#'+g.id+'" data-g="'+g.id+'" style="'+st+'" hidden>'+g.tag+'</a>');
+    cats.insertAdjacentHTML('beforeend','<a class="cat" href="#'+g.id+'" data-g="'+g.id+'" style="'+st+'" hidden><h3>'+g.tag+'</h3><div class="meta"><span class="n"></span><span class="go">Ver guía <i class="ph ph-arrow-right"></i></span></div><span class="pl"></span></a>');
+    main.insertAdjacentHTML('beforeend',
+      '<section class="guide wrap" id="'+g.id+'" style="'+st+'">'+
+        '<div class="gb"><div><h2>'+g.tag+'</h2><p>'+g.text+'</p><div class="count"></div></div>'+
+        '<div class="tip"><b><i class="ph ph-gift"></i> Consejo de regalo</b>'+g.tip+'<br><a href="'+SITE+g.more+'">Ver más en la tienda <i class="ph ph-arrow-right"></i></a></div></div>'+
+        '<div class="items" id="items-'+g.id+'">'+skeleton()+'</div>'+
+      '</section>');
+  });
+  BUDGETS.forEach(function(b,i){
+    seg.insertAdjacentHTML('beforeend','<button type="button" data-i="'+i+'" aria-pressed="'+(i===0)+'">'+b.label+'</button>');
+  });
+  function setBudget(i){
+    bi = i;
+    seg.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',+x.dataset.i===i);});
+    GUIDES.forEach(render);
+    if(window.gtag) gtag('event','navidad_filtro_presupuesto',{presupuesto:BUDGETS[i].label});
+  }
+  seg.addEventListener('click',function(e){var b=e.target.closest('button'); if(b) setBudget(+b.dataset.i);});
+  $('#cheap-all').addEventListener('click',function(){setBudget(1);});
+
+  var ready = {};
+  function setVisible(g, show){
+    $('#'+g.id).hidden=!show;
+    document.querySelectorAll('[data-g="'+g.id+'"]').forEach(function(a){a.hidden=!show;});
+    var any=GUIDES.some(function(x){return !$('#'+x.id).hidden;});
+    var pending=GUIDES.some(function(x){return !ready[x.id] && !x.failed;});
+    $('#nodata').classList.toggle('show',!any && !pending);
+  }
+
+  function render(g){
+    if(!ready[g.id]) return;
+    var items = (STORE[g.id][bi]||[]).slice();
+    var box = $('#items-'+g.id);
+    box.innerHTML = items.map(function(p,i){return p.ph ? phCard(p,i) : card(p,i);}).join('');
+    var info = g.placeholder ? 'Muy pronto' : (items.length ? items.length+' ideas desde $'+fmt.format(items[0].price) : '');
+    $('#'+g.id+' .count').textContent = info;
+    var mid = (items.length && !g.placeholder) ? items[Math.floor(items.length/2)] : null;
+    var pl = $('.cat[data-g="'+g.id+'"] .pl');
+    if(pl) pl.innerHTML = mid ? '<img src="'+mid.img+'" alt="">' : '<i class="ph ph-image"></i>';
+    var n = $('.cat[data-g="'+g.id+'"] .n');
+    if(n) n.textContent = info;
+    g.mid = mid;
+    setVisible(g, items.length>0);
+    layoutCats(); renderPlates(); renderCheap();
+    if(g.id==='detalle') $('#surprise').hidden = !ideaPool().length;
+  }
+
+  // Recomendación aleatoria: sortea un producto accesible, sin repetir el anterior
+  var lastIdea = null, lastItem = null, spinning = false, doneT, idea=$('#idea'), reel=$('#reel'), track=$('#track');
+  var ITEM = 150, GAP = 18, PITCH = ITEM + GAP, SPIN_MS = 3600;
+  function ideaPool(){ return (STORE.detalle && STORE.detalle[0]) || []; }
+  // Producto elegido: sale del grupo de ideas; el carrusel, en cambio, recorre fotos de todo el catálogo cargado
+  function pickIdea(){
+    var pool = ideaPool().filter(function(p){return p.id!==lastIdea;});
+    if(!pool.length) pool = ideaPool();
+    return pool.length ? pool[Math.floor(Math.random()*pool.length)] : null;
+  }
+  function reelPool(){
+    var seen = {}, all = [];
+    GUIDES.forEach(function(g){
+      if(!ready[g.id] || g.placeholder) return;
+      (STORE[g.id][0]||[]).concat(STORE[g.id][1]||[]).forEach(function(p){ if(!seen[p.id]){seen[p.id]=1; all.push(p);} });
+    });
+    for(var i=all.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)), t=all[i]; all[i]=all[j]; all[j]=t; }
+    return all;
+  }
+  function showResult(p){
+    $('#idea-n').textContent = p.name;
+    $('#idea-p').innerHTML = '$'+fmt.format(p.price)+'<small>COP</small>';
+    var buy = $('#idea-buy'); buy.href = SITE+'/?add-to-cart='+p.id; buy.dataset.cart = p.id;
+    $('#idea-res').classList.remove('hide');
+    $('#idea-t').textContent = 'Tu idea de regalo';
+    $('#idea-again').disabled = false;
+  }
+  function drawIdea(){
+    if(spinning) return;
+    var p = pickIdea(); if(!p) return;
+    var fill = reelPool().filter(function(x){return x.id!==p.id;});
+    // Secuencia: producto anterior (o uno cualquiera), unas 26 fotos de paso y el elegido, con algunas de relleno al final
+    var seq = [lastItem || fill[0]];
+    for(var i=0;i<26;i++){
+      var c = fill[(i+1) % fill.length];
+      if(c.id===seq[seq.length-1].id) c = fill[(i+2) % fill.length];
+      seq.push(c);
+    }
+    var win = seq.length; seq.push(p);
+    for(var k=0;k<4;k++) seq.push(fill[(k+9) % fill.length]);
+    track.innerHTML = seq.map(function(x,idx){
+      return '<a class="ri'+(idx===win?' win':'')+'" href="'+x.link+'" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="'+x.img+'" alt=""></a>';
+    }).join('');
+    var half = reel.clientWidth/2 - ITEM/2, from = half, to = half - win*PITCH;
+    var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    lastIdea = p.id; lastItem = p;
+    $('#idea-res').classList.add('hide');
+    $('#idea-t').textContent = 'Buscando una idea...';
+    $('#idea-again').disabled = true;
+    spinning = true;
+    track.style.transition = 'none';
+    track.style.transform = 'translateX('+(still?to:from)+'px)';
+    function done(){ spinning = false; showResult(p); }
+    if(still){ done(); return; }
+    void track.offsetWidth; // fija la posición inicial antes de animar
+    track.style.transition = 'transform '+SPIN_MS+'ms cubic-bezier(.12,.62,.1,1)';
+    track.style.transform = 'translateX('+to+'px)';
+    clearTimeout(doneT); doneT = setTimeout(done, SPIN_MS + 120);
+  }
+  function openIdea(){ idea.hidden=false; drawIdea(); $('#idea-x').focus(); if(window.gtag) gtag('event','navidad_recomendacion'); }
+  function closeIdea(){ idea.hidden=true; clearTimeout(doneT); spinning=false; $('#surprise').focus(); }
+  $('#surprise').addEventListener('click',openIdea);
+  $('#idea-again').addEventListener('click',drawIdea);
+  $('#idea-x').addEventListener('click',closeIdea);
+  idea.addEventListener('click',function(e){ if(e.target===idea) closeIdea(); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape' && !idea.hidden) closeIdea(); });
+
+  // Mosaicos de categorías: filas de 4 y la última repartida a lo ancho, sin huecos
+  function layoutCats(){
+    var vis = [].slice.call(cats.children).filter(function(c){return !c.hidden;});
+    var n = vis.length, rows4 = Math.floor(n/4), rest = n%4;
+    vis.forEach(function(c,i){
+      var span = 3;
+      if(i >= rows4*4 && rest) span = 12/rest;
+      c.style.setProperty('--sp', span);
+      // Tablet y móvil: dos por fila, y si sobra una ocupa todo el ancho
+      c.style.setProperty('--sp2', (n%2 && i===n-1) ? 12 : 6);
+    });
+  }
+
+  // Hero: platos con productos reales, cada uno con el anillo de color de su guía
+  function renderPlates(){
+    var vis = GUIDES.filter(function(g){return g.mid && !$('#'+g.id).hidden;}).slice(0,4);
+    var box = $('#plates');
+    if(!vis.length){ if(!box.children.length) box.innerHTML='<div class="plate sk"></div>'.repeat(4); return; }
+    var sig = vis.map(function(g){return g.id+g.mid.id;}).join();
+    if(box.dataset.sig===sig) return;
+    box.dataset.sig = sig;
+    box.innerHTML = vis.map(function(g,i){
+      return '<a class="plate" href="#'+g.id+'" style="--c:'+g.c+';--i:'+i+'" aria-label="'+g.tag+'"><img src="'+g.mid.img+'" alt=""></a>';
+    }).join('');
+  }
+  renderPlates();
+
+  // Fila "hasta $100.000": una muestra de todas las guías
+  function renderCheap(){
+    var sec=$('#accesibles'), seen={}, all=[];
+    GUIDES.forEach(function(g){
+      if(!ready[g.id] || g.placeholder) return;
+      (STORE[g.id][1]||[]).forEach(function(p){ if(!seen[p.id]){seen[p.id]=1; all.push({p:p,c:g.c});} });
+    });
+    all.sort(function(a,b){return a.p.price-b.p.price;});
+    var pick=[];
+    if(all.length>6){ var st=all.length/6; for(var i=0;i<6;i++) pick.push(all[Math.floor(i*st)]); } else pick=all;
+    sec.hidden = pick.length<3;
+    var sig = pick.map(function(x){return x.p.id;}).join();
+    var box=$('#cheap'); if(box.dataset.sig===sig) return; box.dataset.sig=sig;
+    box.innerHTML = pick.map(function(x,i){return card(x.p,i,x.c);}).join('');
+  }
+
+  // Guías de relleno: cuatro tarjetas con imagen provisional, sin depender del presupuesto
+  function initPlaceholder(g){
+    var items = [1,2,3,4].map(function(i){return {id:'ph-'+g.id+i, name:'Producto destacado', price:0, ph:true, link:SITE+'/tienda/'};});
+    STORE[g.id] = [items,items,items,items]; ready[g.id] = true; render(g);
+  }
+
+  /*DATA-START*/
+  var API = '/wp-json/wc/store/v1/products';
+  function fetchCat(id){
+    return fetch(API+'?category='+id+'&per_page=100&stock_status=instock').then(function(r){
+      if(!r.ok) throw new Error(r.status); return r.json();
+    });
+  }
+  function norm(p){
+    var minor = p.prices && p.prices.currency_minor_unit || 0;
+    var price = Math.round(parseInt(p.prices.price,10) / Math.pow(10, minor));
+    return {id:p.id, name:title(p.name), price:price, img:p.images[0] && p.images[0].src, link:p.permalink};
+  }
+  function compute(g, out){
+    STORE[g.id] = BUDGETS.map(function(b){
+      var max = Math.min(b.max, g.maxPrice || Infinity);
+      var items = out.filter(function(p){return p.price>=b.min && p.price<=max;});
+      items.sort(function(a,b){return a.price-b.price;});
+      // Muestra repartida entre el precio mínimo y el máximo
+      if(items.length > PER_GUIDE){
+        var step = items.length / PER_GUIDE, pick = [];
+        for(var i=0;i<PER_GUIDE;i++) pick.push(items[Math.floor(i*step)]);
+        items = pick;
+      }
+      return items;
+    });
+  }
+  GUIDES.forEach(function(g){
+    if(g.placeholder){ initPlaceholder(g); return; }
+    Promise.all(g.cats.map(fetchCat)).then(function(res){
+      var seen = {}, names = {}, out = [];
+      res.forEach(function(arr){arr.forEach(function(raw){
+        if(seen[raw.id] || !raw.is_in_stock || !raw.images || !raw.images.length) return;
+        var p = norm(raw);
+        if(!p.price || !p.img) return;
+        if(NOT_GIFT.test(p.name) && !(g.allow && g.allow.test(p.name))) return;
+        if(g.exclude && g.exclude.test(p.name)) return;
+        // Variantes de color/referencia del mismo producto: dejar solo una
+        var key = p.price+'|'+p.name.toLowerCase().split(/\s+/).slice(0,4).join(' ');
+        if(names[key]) return;
+        seen[raw.id]=1; names[key]=1; out.push(p);
+      });});
+      compute(g,out); ready[g.id]=true; render(g);
+    }).catch(function(){
+      g.failed = true;
+      setVisible(g,false);
+      $('#err').style.display='block';
+    });
+  });
+  /*DATA-END*/
+
+  // Guirnalda de luces con bombillos en los colores de las guías
+  var BULBS = ['#ff5a5a','#ffd24a','#5be37d','#4aa8ff','#ff7ac6','#ffa84a','#b690ff'];
+  function garland(){
+    var el=$('#garland'), W=el.clientWidth; if(!W) return;
+    var n=Math.max(4,Math.round(W/150)), seg=W/n, sag=24, y0=6, d='M0,'+y0, g='', k=0;
+    for(var i=0;i<n;i++){
+      var x0=i*seg;
+      d+=' Q'+(x0+seg/2)+','+(y0+sag*2)+' '+(x0+seg)+','+y0;
+      [.2,.5,.8].forEach(function(t){
+        var x=x0+seg*t, y=y0+4*sag*t*(1-t), c=BULBS[k%BULBS.length];
+        g+='<g transform="translate('+x.toFixed(1)+','+y.toFixed(1)+')"><rect class="cap" x="-3" y="-1" width="6" height="7" rx="1"/>'+
+           '<ellipse class="bulb" cx="0" cy="12" rx="5.5" ry="8" fill="'+c+'" style="--b:'+c+';--d:'+((k*.37)%2.6).toFixed(2)+'s"/></g>';
+        k++;
+      });
+    }
+    el.innerHTML='<svg width="'+W+'" height="70" viewBox="0 0 '+W+' 70"><path class="wire" d="'+d+'"/>'+g+'</svg>';
+  }
+  garland();
+  var gt; window.addEventListener('resize',function(){clearTimeout(gt);gt=setTimeout(garland,200);});
+
+  // Cuenta regresiva real hasta el 25 de diciembre
+  (function(){
+    var now=new Date(), d=Math.ceil((new Date(now.getFullYear(),11,25)-now)/864e5);
+    if(d>0 && d<=90){ $('#tk-n').textContent=d; $('#tk-l').textContent=(d===1?'día':'días')+' para Navidad'; }
+  })();
+
+  // Nieve suave (se detiene en pestañas ocultas y con movimiento reducido)
+  (function(){
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){$('#snow').remove();return;}
+    var c=$('#snow'), x=c.getContext('2d'), W, H, flakes=[], N=window.innerWidth<700?26:58, raf;
+    function size(){W=c.width=window.innerWidth;H=c.height=window.innerHeight;}
+    size(); window.addEventListener('resize',size);
+    for(var i=0;i<N;i++) flakes.push({x:Math.random()*W,y:Math.random()*H,r:1.2+Math.random()*2.6,s:.35+Math.random()*.9,d:Math.random()*6.28,a:.55+Math.random()*.4});
+    function tick(){
+      x.clearRect(0,0,W,H);
+      x.shadowColor='rgba(120,20,30,.35)'; x.shadowBlur=2;
+      flakes.forEach(function(f){
+        f.y+=f.s; f.d+=.012; f.x+=Math.sin(f.d)*.45;
+        if(f.y>H+6){f.y=-6;f.x=Math.random()*W;}
+        x.beginPath(); x.arc(f.x,f.y,f.r,0,6.283); x.fillStyle='rgba(255,255,255,'+f.a+')'; x.fill();
+      });
+      raf=requestAnimationFrame(tick);
+    }
+    document.addEventListener('visibilitychange',function(){
+      if(document.hidden) cancelAnimationFrame(raf); else tick();
+    });
+    tick();
+  })();
+
+  // Scroll: revelar productos de cada guía, marcar la guía activa y mostrar las esferas laterales
+  document.documentElement.classList.add('js');
+  if('IntersectionObserver' in window){
+    var reveal = new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');reveal.unobserve(e.target);}
+    });},{threshold:.1});
+    var spy = new IntersectionObserver(function(es){es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      document.querySelectorAll('.rail a, .pills a').forEach(function(a){a.classList.toggle('on',a.dataset.g===e.target.id);});
+      var on=pills.querySelector('a.on'); if(on) pills.scrollTo({left:on.offsetLeft-16,behavior:'smooth'});
+    });},{rootMargin:'-45% 0px -50% 0px'});
+    var railWatch = new IntersectionObserver(function(es){es.forEach(function(e){
+      rail.classList.toggle('show',e.isIntersecting);
+    });},{rootMargin:'-30% 0px -30% 0px'});
+    document.querySelectorAll('.guide').forEach(function(s){reveal.observe(s);spy.observe(s);});
+    railWatch.observe(main);
+  } else {
+    document.querySelectorAll('.guide').forEach(function(s){s.classList.add('in');});
+    rail.classList.add('show');
+  }
+
+  // Medición de clics
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a'); if(!a || !window.gtag) return;
+    var sec=a.closest('.guide');
+    if(a.dataset.cart) gtag('event','navidad_comprar',{guia:sec&&sec.id,producto:a.dataset.cart});
+    else if(a.closest('#rail,#pills,#cats,#plates,#start')) gtag('event','navidad_ir_a_guia',{destino:a.getAttribute('href')});
+  });
+})();
+</script>

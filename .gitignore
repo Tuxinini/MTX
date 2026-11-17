@@ -1,0 +1,24 @@
+# Secretos: nunca a GitHub
+.env
+*.env.local
+
+# Solo se versionan los sitios y scripts; todo lo demás se ignora
+/*
+!/.gitignore
+!/.env.example
+!/apple-tienda-oficial/
+!/apple-tienda-originales/
+!/logitech-tienda-oficial/
+!/logitech-tienda-oficial-optimizado/
+!/navidad-tienda/
+!/scan-products.ps1
+!/sync-logitech-images.ps1
+!/.claude/
+/.claude/*
+!/.claude/launch.json
+
+# Ruido dentro de los sitios
+node_modules/
+.cache/
+*.bak-*
+*.zip
